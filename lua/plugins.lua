@@ -7,6 +7,17 @@ return require('packer').startup(function()
     use 'nvim-treesitter/nvim-treesitter'
     use 'karb94/neoscroll.nvim'
     use 'tpope/vim-commentary'
+
+
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = { {'nvim-lua/plenary.nvim'} },
+        config = function()
+            require('telescope').setup{
+                defaults = { file_ignore_patterns = {"node_modules"} }
+            }
+        end
+    }
     
 
     use {
