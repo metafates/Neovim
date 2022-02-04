@@ -6,6 +6,7 @@ return require('packer').startup(function()
     use 'nvim-treesitter/nvim-treesitter'
     use 'karb94/neoscroll.nvim'
     use 'tpope/vim-commentary'
+    use 'terryma/vim-multiple-cursors'
     use 'akinsho/toggleterm.nvim'
 
 
@@ -18,7 +19,6 @@ return require('packer').startup(function()
             }
         end
     }
-    
 
     use {
         'gelguy/wilder.nvim',
@@ -47,7 +47,6 @@ return require('packer').startup(function()
         end
     }
 
-        
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true },
@@ -70,6 +69,5 @@ return require('packer').startup(function()
         end
     }
 
-    
 
 end)
