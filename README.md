@@ -4,7 +4,7 @@ My lua-based neovim config
 
 ![screenshot](./screenshots/1.png)
 
-Plugin manager - [packer](https://github.com/wbthomason/packer.nvim)
+Plugin manager - [Packer](https://github.com/wbthomason/packer.nvim)
 
 ## Keybinds
 
@@ -12,13 +12,13 @@ Leader key is ',' (ascii coma)
 
 Normal mode
 
-`<Leader>f` - project fuzzy search
-`<Leader>F` - telescope grep search
-`<Leader>t` - toggle terminal
-`<Leader>w` - save file
-`<Leader>q` - save and quit
-`f` - easymotion forwards
-`F` - easymotion backwards
+`<Leader>f` - project fuzzy search<br>
+`<Leader>F` - telescope grep search<br>
+`<Leader>t` - toggle terminal<br>
+`<Leader>w` - save file<br>
+`<Leader>q` - save and quit<br>
+`f` - easymotion forwards<br>
+`F` - easymotion backwards<br>
 
 Insert mode
 
