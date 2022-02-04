@@ -8,7 +8,7 @@ Plugin manager - [Packer](https://github.com/wbthomason/packer.nvim)
 
 ## Keybinds
 
-Leader key is ',' (ascii coma)
+Leader key is ',' (ascii comma)
 
 Normal mode
 
