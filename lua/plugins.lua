@@ -1,5 +1,4 @@
 return require('packer').startup(function()
-
     use 'wbthomason/packer.nvim'
     use 'lifepillar/vim-gruvbox8'
     use 'Raimondi/delimitMate'
@@ -7,6 +6,7 @@ return require('packer').startup(function()
     use 'nvim-treesitter/nvim-treesitter'
     use 'karb94/neoscroll.nvim'
     use 'tpope/vim-commentary'
+    use 'akinsho/toggleterm.nvim'
 
 
     use {
@@ -33,6 +33,11 @@ return require('packer').startup(function()
         end
     }
 
+    use {
+        'neoclide/coc.nvim',
+        branch = 'release',
+    }
+
 
     use {
         'phaazon/hop.nvim',
@@ -47,7 +52,7 @@ return require('packer').startup(function()
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true },
         config = function()
-          require('lualine').setup { options = { theme = 'gruvbox' } }
+          require('lualine').setup { options = { theme = 'gruvbox-material' } }
         end,
     }
 
