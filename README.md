@@ -2,4 +2,4 @@
 
 My lua-based neovim config
 
-[screenshot](./screenshots/1.png)
+![screenshot](./screenshots/1.png)
