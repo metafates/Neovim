@@ -7,11 +7,14 @@ require("better_escape").setup {
 }
 
 vim.g.mapleader = ','
-vim.api.nvim_set_keymap('n', '<Leader>w', ':w<Enter>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<Leader>q', ':wq<Enter>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<Leader>w', ':w<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<Leader>q', ':wq<CR>', { noremap = true })
+
+-- Lua tree
+vim.api.nvim_set_keymap('n', '<Leader>m', ':NvimTreeToggle<CR>', { noremap = true })
 
 -- Telescope
-vim.api.nvim_set_keymap('n', '<Leader>F', ':Telescope live_grep<Enter>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<Leader>F', ':Telescope live_grep<CR>', { noremap = true })
 
 -- Hop
 vim.api.nvim_set_keymap('n', 'f', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = false })<cr>", {})

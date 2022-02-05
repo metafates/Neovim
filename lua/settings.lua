@@ -22,4 +22,3 @@ vim.api.nvim_command('set noshowmode')
 -- Leader F popup window
 vim.g.Lf_WindowPosition = 'popup'
 vim.g.Lf_PreviewInPopup = 1
-

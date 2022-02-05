@@ -8,6 +8,16 @@ return require('packer').startup(function()
     use 'tpope/vim-commentary'
     use 'terryma/vim-multiple-cursors'
     use 'akinsho/toggleterm.nvim'
+    use 'goolord/alpha-nvim'
+
+
+    use {
+        'kyazdani42/nvim-tree.lua',
+        requires = {
+          'kyazdani42/nvim-web-devicons',
+        },
+        config = function() require'nvim-tree'.setup {} end
+    }
 
 
     use {
@@ -50,9 +60,6 @@ return require('packer').startup(function()
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-        config = function()
-          require('lualine').setup { options = { theme = 'gruvbox-material' } }
-        end,
     }
 
     use {
@@ -61,13 +68,4 @@ return require('packer').startup(function()
             require("better_escape").setup()
         end,
     }
-
-    use {
-        'goolord/alpha-nvim',
-        config = function ()
-            require'alpha'.setup(require'alpha.themes.dashboard'.config)
-        end
-    }
-
-
 end)

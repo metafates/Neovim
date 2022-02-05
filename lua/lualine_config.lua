@@ -13,7 +13,7 @@ lualine.setup {
     lualine_a = {'mode'},
     lualine_b = {'branch', 'diff', 'diagnostics'},
     lualine_c = {'filename'},
-    lualine_x = {'encoding', 'filetype'},
+    lualine_x = {"os.date('%X')", 'encoding', 'filetype'},
     lualine_y = {'progress'},
     lualine_z = {'location'}
   },
@@ -29,4 +29,4 @@ lualine.setup {
   extensions = {}
 }
 
-lualine.setup(config) 
+lualine.setup(config)
