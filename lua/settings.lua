@@ -1,4 +1,5 @@
 local set = vim.opt
+set.termguicolors = true
 set.number = true
 set.relativenumber = true
 set.cc = '80'
