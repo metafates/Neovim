@@ -25,7 +25,19 @@ My lua-based neovim config
 - [hop](https://github.com/phaazon/hop.nvim) - Easymotion
 - [lualine](https://github.com/nvim-lualine/lualine.nvim) - Status line
 - [better-escape](https://github.com/max397574/better-escape.nvim) - Escape insert mode quickly
-    
+
+## Install
+
+Neovim >= 0.5 is required.\
+
+! Note that this will replace your current config.
+```bash
+git clone https://github.com/metafates/Neovim.git ~/.config/nvim
+```
+
+Then run open Neovim and run :PackerSync to install plugins.\
+Be sure to use one of the [nerdfonts](https://github.com/ryanoasis/nerd-fonts) to show icons properly
+
 ## Keybinds
 
 > Leader key is ',' (ascii comma)
