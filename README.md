@@ -35,7 +35,7 @@ Neovim >= 0.5 is required.\
 git clone https://github.com/metafates/Neovim.git ~/.config/nvim
 ```
 
-Then run open Neovim and run :PackerSync to install plugins.\
+Then open Neovim and run :PackerSync to install plugins.\
 Be sure to use one of the [nerdfonts](https://github.com/ryanoasis/nerd-fonts) to show icons properly
 
 ## Keybinds
