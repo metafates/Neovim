@@ -25,6 +25,7 @@ My lua-based neovim config
 -   [hop](https://github.com/phaazon/hop.nvim) - Easymotion
 -   [lualine](https://github.com/nvim-lualine/lualine.nvim) - Status line
 -   [better-escape](https://github.com/max397574/better-escape.nvim) - Escape insert mode quickly
+-   [nvim-notify](https://github.com/rcarriga/nvim-notify) - A fancy, configurable, notification manager for NeoVim
 
 ## Install
 
@@ -55,7 +56,7 @@ Be sure to use one of the [nerdfonts](https://github.com/ryanoasis/nerd-fonts) t
 `f` - easymotion forwards\
 `F` - easymotion backwards\
 `gcc` - comment out a line\
-`<C-n>` - spawn cursor on the same word\
+`<C-n>` - spawn cursor on the same word
 
 **Insert Mode**
 

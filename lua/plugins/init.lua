@@ -18,6 +18,8 @@ return require('packer').startup(function()
     use 'akinsho/toggleterm.nvim'
     use 'goolord/alpha-nvim'
     use 'yamatsum/nvim-cursorline'
+    use 'rcarriga/nvim-notify'
+
 
     use {
         'CRAG666/code_runner.nvim',
