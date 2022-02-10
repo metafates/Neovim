@@ -28,14 +28,14 @@ My lua-based neovim config
 
 ## Install
 
-Neovim >= 0.5 is required.\
+> Neovim >= 0.5 is required.
 
 ! Note that this will replace your current config.
 ```bash
 git clone https://github.com/metafates/Neovim.git ~/.config/nvim
 ```
 
-Then open Neovim and run :PackerSync to install plugins.\
+Then open Neovim and run :PackerSync to install plugins.
 Be sure to use one of the [nerdfonts](https://github.com/ryanoasis/nerd-fonts) to show icons properly
 
 ## Keybinds
