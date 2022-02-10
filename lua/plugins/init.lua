@@ -78,7 +78,6 @@ return require('packer').startup(function()
          'nvim-lualine/lualine.nvim',
          requires = { 'kyazdani42/nvim-web-devicons', opt = true },
      }
-    
 
     use {
         "max397574/better-escape.nvim",
@@ -87,3 +86,4 @@ return require('packer').startup(function()
         end,
     }
 end)
+

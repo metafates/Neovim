@@ -1,10 +1,24 @@
-require('plugins') -- plugin list
-require('settings') -- neovim settings
-require('keybinds') -- maps
-require('theme') -- theme related stuff
+local load_modules = require("utils").load_modules
+
+local core_modules = {
+    "core.settings",
+    "core.mappings"
+}
+
+local plugins_modules = {
+    "plugins",
+    "plugins.configs.alpha",
+    "plugins.configs.toggleterm",
+    "plugins.configs.lualine"
+}
+
+local colors_modules = {
+    "colors"
+}
+
+load_modules(core_modules)
+load_modules(plugins_modules)
+load_modules(colors_modules)
 
 
--- plugin specifig configs
-require('lualine_config')
-require('toggleterm_config')
-require('alpha_config')
+
