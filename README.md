@@ -8,23 +8,31 @@ Plugin manager - [Packer](https://github.com/wbthomason/packer.nvim)
 
 ## Keybinds
 
-Leader key is ',' (ascii comma)
+> Leader key is ',' (ascii comma)
 
-Normal mode
+__Normal Mode__
 
-`<Leader>f` - project fuzzy search<br>
-`<Leader>F` - telescope grep search<br>
-`<Leader>t` - toggle terminal<br>
-`<Leader>w` - save file<br>
-`<Leader>q` - save and quit<br>
-`f` - easymotion forwards<br>
-`F` - easymotion backwards<br>
+`<Leader>r` - run the current file using [this plugin](https://github.com/CRAG666/code_runner.nvim)\
+`<Leader>f` - project fuzzy search\
+`<Leader>F` - telescope grep search\
+`<Leader>t` - toggle terminal\
+`<Leader>w` - save (:w)\
+`<Leader>q` - quit (:q)\
+`<Leader>m` - toggle file tree\
+`f` - easymotion forwards\
+`F` - easymotion backwards\
+`gcc` - comment out a line\
+`<C-n>` - spawn cursor on the same word\
 
-Insert mode
+__Insert Mode__
 
 `jj` - exit insert mode
 
+__Visual Mode__
+
+`gc` - comment out a selection
+`<C-n>` - spawn cursors on each line of the selected text
+
 ## Commands
 
-`gcc` - comment out a line
-
+`:CRFiletype` - open config for [code runner plugin](https://github.com/CRAG666/code_runner.nvim)
