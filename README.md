@@ -80,12 +80,10 @@ Be sure to use one of the [nerdfonts](https://github.com/ryanoasis/nerd-fonts) t
     │   └── init.lua  
     ├── core                    # core modules
     │   ├── mappings.lua
+    │   ├── autocmd.lua
     │   └── settings.lua
     ├── plugins
-    │   ├── configs             # configs related to specific plugins
-    │   │   ├── alpha.lua
-    │   │   ├── lualine.lua
-    │   │   └── toggleterm.lua
+    │   ├── configs/            # configs related to specific plugins
     │   └── init.lua            # plugins list
     └── utils                   # utils functions
         └── init.lua
