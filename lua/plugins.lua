@@ -9,6 +9,15 @@ return require('packer').startup(function()
     use 'terryma/vim-multiple-cursors'
     use 'akinsho/toggleterm.nvim'
     use 'goolord/alpha-nvim'
+    use 'yamatsum/nvim-cursorline'
+
+    use {
+        'CRAG666/code_runner.nvim',
+        requires = 'nvim-lua/plenary.nvim',
+        config = function()
+            require('code_runner').setup{}
+        end
+    }
 
 
     use {
@@ -57,10 +66,11 @@ return require('packer').startup(function()
         end
     }
 
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-    }
+     use {
+         'nvim-lualine/lualine.nvim',
+         requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+     }
+    
 
     use {
         "max397574/better-escape.nvim",
