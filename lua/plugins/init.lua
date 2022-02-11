@@ -18,10 +18,12 @@ return require('packer').startup(function()
     use 'akinsho/toggleterm.nvim'
     use 'rcarriga/nvim-notify'
     use 'goolord/alpha-nvim'
+    use 'gelguy/wilder.nvim'
 
     use {
         'CRAG666/code_runner.nvim',
         requires = 'nvim-lua/plenary.nvim',
+        commit = 'd1a295eb3ca15ab5e5dfe3c81a2f6f0635af1229',
         config = function()
             require('code_runner').setup{}
         end
@@ -43,19 +45,6 @@ return require('packer').startup(function()
             require('telescope').setup{
                 defaults = { file_ignore_patterns = {"node_modules"} }
             }
-        end
-    }
-
-    use {
-        'gelguy/wilder.nvim',
-        config = function()
-            vim.fn['wilder#setup']({
-              modes = {':', '/', '?'},
-              next_key = '<Tab>',
-              previous_key = '<S-Tab>',
-              accept_key = '<Down>',
-              reject_key = '<Up>',
-            })
         end
     }
 
