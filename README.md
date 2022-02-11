@@ -16,7 +16,6 @@ My lua-based neovim config
 -   [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) - Multiple cursors
 -   [toggleterm](https://github.com/akinsho/toggleterm.nvim) - Terminal toggle
 -   [alpha-nvim](https://github.com/goolord/alpha-nvim) - Startup screen
--   [nvim-cursorline](https://github.com/yamatsum/nvim-cursorline) - Highlight words
 -   [code runner](https://github.com/CRAG666/code_runner.nvim) - The best code runner you could have
 -   [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua) - File explorer
 -   [telescope](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy finder over lists
@@ -80,6 +79,7 @@ Be sure to use one of the [nerdfonts](https://github.com/ryanoasis/nerd-fonts) t
     │   └── init.lua  
     ├── core                    # core modules
     │   ├── mappings.lua
+    │   ├── autocmd.lua
     │   ├── autocmd.lua
     │   └── settings.lua
     ├── plugins

@@ -16,10 +16,8 @@ return require('packer').startup(function()
     use 'tpope/vim-commentary'
     use 'terryma/vim-multiple-cursors'
     use 'akinsho/toggleterm.nvim'
-    use 'goolord/alpha-nvim'
-    use 'yamatsum/nvim-cursorline'
     use 'rcarriga/nvim-notify'
-
+    use 'goolord/alpha-nvim'
 
     use {
         'CRAG666/code_runner.nvim',
@@ -35,7 +33,6 @@ return require('packer').startup(function()
         requires = {
           'kyazdani42/nvim-web-devicons',
         },
-        config = function() require'nvim-tree'.setup {} end
     }
 
 
