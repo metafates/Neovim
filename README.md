@@ -91,3 +91,5 @@ Be sure to use one of the [nerdfonts](https://github.com/ryanoasis/nerd-fonts) t
 
 ## Screenshots
 ![screenshot](./screenshots/2.png)
+![screenshot](./screenshots/3.png)
+![screenshot](./screenshots/4.png)
