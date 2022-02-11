@@ -88,3 +88,6 @@ Be sure to use one of the [nerdfonts](https://github.com/ryanoasis/nerd-fonts) t
     └── utils                   # utils functions
         └── init.lua
 ```
+
+## Screenshots
+[screenshot](./screenshots/2.png)
