@@ -8,7 +8,6 @@ end
 
 return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
-    use 'lifepillar/vim-gruvbox8'
     use 'Raimondi/delimitMate'
     use 'Yggdroot/LeaderF'
     use 'nvim-treesitter/nvim-treesitter'
@@ -19,6 +18,10 @@ return require('packer').startup(function()
     use 'rcarriga/nvim-notify'
     use 'goolord/alpha-nvim'
     use 'gelguy/wilder.nvim'
+
+    -- Themes
+    use "projekt0n/github-nvim-theme"
+    use 'lifepillar/vim-gruvbox8'
 
     use {
         'CRAG666/code_runner.nvim',

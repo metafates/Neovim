@@ -14,7 +14,8 @@ local plugins_modules = {
     "plugins.configs.lualine",
     "plugins.configs.notify",
     "plugins.configs.alpha",
-    "plugins.configs.wilder"
+    "plugins.configs.wilder",
+    "plugins.configs.treesitter"
 }
 
 local colors_modules = {
