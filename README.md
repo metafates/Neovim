@@ -25,6 +25,7 @@ My lua-based neovim config
 -   [lualine](https://github.com/nvim-lualine/lualine.nvim) - Status line
 -   [better-escape](https://github.com/max397574/better-escape.nvim) - Escape insert mode quickly
 -   [nvim-notify](https://github.com/rcarriga/nvim-notify) - A fancy, configurable, notification manager for NeoVim
+-   [VimTeX](https://github.com/lervag/vimtex) - LaTeX support
 
 ## Install
 

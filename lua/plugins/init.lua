@@ -18,6 +18,7 @@ return require('packer').startup(function()
     use 'rcarriga/nvim-notify'
     use 'goolord/alpha-nvim'
     use 'gelguy/wilder.nvim'
+    use 'lervag/vimtex'
 
     -- Themes
     use "projekt0n/github-nvim-theme"
