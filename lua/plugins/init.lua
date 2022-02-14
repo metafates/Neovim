@@ -21,8 +21,12 @@ return require('packer').startup(function()
     use 'lervag/vimtex'
 
     -- Themes
-    use "projekt0n/github-nvim-theme"
     use 'lifepillar/vim-gruvbox8'
+
+    use {
+        'romgrk/barbar.nvim',
+        requires = {'kyazdani42/nvim-web-devicons'}
+    }
 
     use {
         'CRAG666/code_runner.nvim',

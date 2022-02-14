@@ -26,6 +26,7 @@ My lua-based neovim config
 -   [better-escape](https://github.com/max397574/better-escape.nvim) - Escape insert mode quickly
 -   [nvim-notify](https://github.com/rcarriga/nvim-notify) - A fancy, configurable, notification manager for NeoVim
 -   [VimTeX](https://github.com/lervag/vimtex) - LaTeX support
+-   [barbar](https://github.com/romgrk/barbar.nvim) - Buffer tabs
 
 ## Install
 
@@ -55,6 +56,10 @@ Be sure to use one of the [nerdfonts](https://github.com/ryanoasis/nerd-fonts) t
 `<Leader>m` - toggle file tree\
 `f` - easymotion forwards\
 `F` - easymotion backwards\
+`W` - next buffer tab\
+`Q` - next buffer tab\
+`X` - close buffer tab\
+`P` - pin buffer tab\
 `gcc` - comment out a line\
 `<C-n>` - spawn cursor on the same word
 
@@ -82,6 +87,7 @@ Be sure to use one of the [nerdfonts](https://github.com/ryanoasis/nerd-fonts) t
     │   ├── mappings.lua
     │   ├── autocmd.lua
     │   ├── autocmd.lua
+    │   ├── globals.lua
     │   └── settings.lua
     ├── plugins
     │   ├── configs/            # configs related to specific plugins

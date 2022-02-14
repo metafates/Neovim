@@ -4,7 +4,8 @@ local core_modules = {
     "core.settings",
     "core.mappings",
     "core.options",
-    "core.autocmd"
+    "core.autocmd",
+    "core.globals"
 }
 
 local plugins_modules = {
