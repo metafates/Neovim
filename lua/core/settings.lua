@@ -1,4 +1,5 @@
 local set = vim.opt
+set.mouse = 'a'
 set.termguicolors = true
 set.number = true
 set.relativenumber = true
