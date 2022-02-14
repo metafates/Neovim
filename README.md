@@ -57,7 +57,7 @@ Be sure to use one of the [nerdfonts](https://github.com/ryanoasis/nerd-fonts) t
 `f` - easymotion forwards\
 `F` - easymotion backwards\
 `W` - next buffer tab\
-`Q` - next buffer tab\
+`Q` - previous buffer tab\
 `X` - close buffer tab\
 `P` - pin buffer tab\
 `gcc` - comment out a line\
