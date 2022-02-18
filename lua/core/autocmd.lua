@@ -1,7 +1,7 @@
 vim.api.nvim_exec([[ autocmd BufWritePost * lua require('notify')('   Saved ') ]], false)
 
 -- Hide status line in menus
-vim.api.nvim_exec([[
+vim.cmd[[
     let blacklist = ['alpha', 'NvimTree', 'TelescopePrompt', 'TelescopeResults']
     
     function! s:HideStatus()
@@ -16,5 +16,11 @@ vim.api.nvim_exec([[
     endfunction
     
     autocmd FileType * if index(blacklist, &ft) < 0 | call s:ShowStatus() | else | call s:HideStatus() | endif
-]], true)
+]]
 
+vim.cmd[[
+augroup highlight_yank
+autocmd!
+au TextYankPost * silent! lua vim.highlight.on_yank({higroup="Visual", timeout=200})
+augroup END
+]]
