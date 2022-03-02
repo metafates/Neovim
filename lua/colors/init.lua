@@ -1,3 +1,3 @@
-vim.opt.termguicolors = true
-vim.o.background = "dark" -- "light" 
-vim.cmd([[colorscheme gruvbox8]])
+vim.opt.termguicolors = false
+-- vim.o.background = "dark" -- "light" 
+vim.cmd([[colorscheme wal]])

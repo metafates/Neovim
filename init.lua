@@ -13,7 +13,6 @@ local plugins_modules = {
     "plugins.configs.nvim-tree",
     "plugins.configs.toggleterm",
     "plugins.configs.lualine",
-    "plugins.configs.notify",
     "plugins.configs.alpha",
     "plugins.configs.wilder",
     "plugins.configs.treesitter"

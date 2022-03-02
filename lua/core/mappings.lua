@@ -1,12 +1,14 @@
 local map = vim.api.nvim_set_keymap
 
 -- "jj" to exit insert mode
-require("better_escape").setup {
-    mapping = {"jj"},
-    timeout = vim.o.timeoutlen,
-    clear_empty_lines = false, 
-    keys = "<Esc>", 
-}
+-- require("better_escape").setup {
+--     mapping = {"jk"},
+--     timeout = vim.o.timeoutlen,
+--     clear_empty_lines = false, 
+--     keys = "<Esc>", 
+-- }
+
+map('i', 'jk', '<Esc>', { noremap = true })
 
 vim.g.mapleader = ','
 map('n', '<Leader>w', ':w<CR>', { noremap = true })
@@ -36,13 +38,3 @@ end
 
 map('i', '<Tab>', 'v:lua.smart_tab()', {expr = true, noremap = true})
 
--- Barbar
-local barbarOpts = {noremap = true, silent = true}
-
-map('n', 'X', ':BufferClose<CR>', barbarOpts)
-map('n', 'W', ':BufferNext<CR>', barbarOpts)
-map('n', 'Q', ':BufferPrevious<CR>', barbarOpts)
-map('n', 'P', ':BufferPin<CR>', barbarOpts)
-for i=1,9 do
-    map('n', '<leader>' .. i, ':BufferGoto ' .. i .. '<CR>', barbarOpts)
-end

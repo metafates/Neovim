@@ -11,22 +11,14 @@ return require('packer').startup(function()
     use 'Raimondi/delimitMate'
     use 'Yggdroot/LeaderF'
     use 'nvim-treesitter/nvim-treesitter'
-    use 'karb94/neoscroll.nvim'
     use 'tpope/vim-commentary'
     use 'terryma/vim-multiple-cursors'
     use 'akinsho/toggleterm.nvim'
-    use 'rcarriga/nvim-notify'
     use 'goolord/alpha-nvim'
     use 'gelguy/wilder.nvim'
     use 'lervag/vimtex'
+    use 'dylanaraps/wal.vim'
 
-    -- Themes
-    use 'lifepillar/vim-gruvbox8'
-
-    use {
-        'romgrk/barbar.nvim',
-        requires = {'kyazdani42/nvim-web-devicons'}
-    }
 
     use {
         'CRAG666/code_runner.nvim',
