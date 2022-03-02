@@ -17,7 +17,7 @@ return require('packer').startup(function()
     use 'goolord/alpha-nvim'
     use 'gelguy/wilder.nvim'
     use 'lervag/vimtex'
-    use 'dylanaraps/wal.vim'
+    use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
 
 
     use {
