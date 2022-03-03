@@ -80,7 +80,7 @@ Be sure to use one of the [nerdfonts](https://github.com/ryanoasis/nerd-fonts) t
     │   └── init.lua  
     ├── core                    # core modules
     │   ├── mappings.lua
-    │   ├── autocmd.lua
+    │   ├── options.lua
     │   ├── autocmd.lua
     │   ├── globals.lua
     │   └── settings.lua
