@@ -8,7 +8,6 @@ My lua-based neovim config
 
 > Plugin manager - [Packer](https://github.com/wbthomason/packer.nvim)
 
--   [Gruvbox8](https://github.com/lifepillar/vim-gruvbox8) - lightweight gruvbox theme
 -   [delimitMate](https://github.com/Raimondi/delimitMate) - automatic closing of quotes, parenthesis, brackets, etc
 -   [LeaderF](https://github.com/Yggdroot/LeaderF) - An efficient fuzzy finder
 -   [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Syntax highlighting
@@ -23,10 +22,8 @@ My lua-based neovim config
 -   [coc](https://github.com/neoclide/coc.nvim) - Autocompletion
 -   [hop](https://github.com/phaazon/hop.nvim) - Easymotion
 -   [lualine](https://github.com/nvim-lualine/lualine.nvim) - Status line
--   [better-escape](https://github.com/max397574/better-escape.nvim) - Escape insert mode quickly
--   [nvim-notify](https://github.com/rcarriga/nvim-notify) - A fancy, configurable, notification manager for NeoVim
 -   [VimTeX](https://github.com/lervag/vimtex) - LaTeX support
--   [barbar](https://github.com/romgrk/barbar.nvim) - Buffer tabs
+-   [pywal.nvim](https://github.com/AlphaTechnolog/pywal.nvim') - Pywal neovim theme
 
 ## Install
 
@@ -56,10 +53,6 @@ Be sure to use one of the [nerdfonts](https://github.com/ryanoasis/nerd-fonts) t
 `<Leader>m` - toggle file tree\
 `f` - easymotion forwards\
 `F` - easymotion backwards\
-`W` - next buffer tab\
-`Q` - previous buffer tab\
-`X` - close buffer tab\
-`P` - pin buffer tab\
 `gcc` - comment out a line\
 `<C-n>` - spawn cursor on the same word
 
