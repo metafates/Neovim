@@ -46,7 +46,7 @@ Be sure to use one of the [nerdfonts](https://github.com/ryanoasis/nerd-fonts) t
 
 ### Normal Mode
 
-`<Leader>r` - run the current file using [this plugin](https://github.com/CRAG666/code_runner.nvim)\
+`<Leader>r` - run the current file using [code runner](https://github.com/CRAG666/code_runner.nvim)\
 `<Leader>f` - project fuzzy search\
 `<Leader>F` - telescope grep search\
 `<Leader>t` - toggle terminal\
@@ -64,12 +64,12 @@ Be sure to use one of the [nerdfonts](https://github.com/ryanoasis/nerd-fonts) t
 
 ### Visual Mode
 
-`gc` - comment out a selection
+`gc` - comment out a selection\
 `<C-n>` - spawn cursors on each line of the selected text
 
 ## Commands
 
-`:CRFiletype` - open config for [code runner plugin](https://github.com/CRAG666/code_runner.nvim)
+`:CRFiletype` - open config file for [code runner](https://github.com/CRAG666/code_runner.nvim)
 
 ## Files Structure
 
