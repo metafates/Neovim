@@ -25,7 +25,7 @@ My lua-based neovim config
 - [hop](https://github.com/phaazon/hop.nvim) - Easymotion
 - [lualine](https://github.com/nvim-lualine/lualine.nvim) - Status line
 - [VimTeX](https://github.com/lervag/vimtex) - LaTeX support
-- [pywal.nvim](https://github.com/AlphaTechnolog/pywal.nvim') - Neovim pywal integration
+- [pywal.nvim](https://github.com/AlphaTechnolog/pywal.nvim) - Neovim pywal integration
 
 ## Install
 
