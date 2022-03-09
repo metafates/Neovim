@@ -19,6 +19,7 @@ map('n', '<Leader>m', ':NvimTreeToggle<CR>', { noremap = true })
 
 -- Telescope
 map('n', '<Leader>F', ':Telescope live_grep<CR>', { noremap = true })
+map('n', '<Leader>f', ':Telescope find_files<CR>', { noremap = true })
 
 -- Code Runner
 map('n', '<leader>r', ':RunFile<CR>', { noremap = true, silent = false })

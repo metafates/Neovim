@@ -9,7 +9,6 @@ end
 return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
     use 'Raimondi/delimitMate'
-    use 'Yggdroot/LeaderF'
     use 'nvim-treesitter/nvim-treesitter'
     use 'tpope/vim-commentary'
     use 'terryma/vim-multiple-cursors'
@@ -18,7 +17,6 @@ return require('packer').startup(function()
     use 'gelguy/wilder.nvim'
     use 'lervag/vimtex'
     use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
-
 
     use {
         'CRAG666/code_runner.nvim',

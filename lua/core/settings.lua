@@ -16,6 +16,7 @@ vim.api.nvim_command('set nobackup')
 vim.api.nvim_command('set noshowmode')
 vim.api.nvim_command('set nrformats+=alpha')
 
+vim.o.signcolumn = "yes"
 
 -- Leader F popup window
 vim.g.Lf_WindowPosition = 'popup'
