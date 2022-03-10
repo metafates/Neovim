@@ -16,7 +16,12 @@ return require('packer').startup(function()
     use 'goolord/alpha-nvim'
     use 'gelguy/wilder.nvim'
     use 'lervag/vimtex'
-    use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
+    use 'kshenoy/vim-signature'
+
+    use {
+        'AlphaTechnolog/pywal.nvim',
+        as = 'pywal'
+    }
 
     use {
         'CRAG666/code_runner.nvim',
@@ -26,7 +31,6 @@ return require('packer').startup(function()
             require('code_runner').setup{}
         end
     }
-
 
     use {
         'kyazdani42/nvim-tree.lua',

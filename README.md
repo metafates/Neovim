@@ -25,6 +25,7 @@ My lua-based neovim config
 - [lualine](https://github.com/nvim-lualine/lualine.nvim) - Status line
 - [VimTeX](https://github.com/lervag/vimtex) - LaTeX support
 - [pywal.nvim](https://github.com/AlphaTechnolog/pywal.nvim) - Neovim pywal integration
+- [vim-signature](https://github.com/kshenoy/vim-signature) - Plugin to place, toggle and display marks.
 
 ## Install
 

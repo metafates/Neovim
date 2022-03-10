@@ -12,7 +12,7 @@ map('i', 'jk', '<Esc>', { noremap = true })
 
 vim.g.mapleader = ','
 map('n', '<Leader>w', ':w<CR>', { noremap = true })
-map('n', '<Leader>q', ':q<CR>', { noremap = true })
+map('n', '<Leader>q', ':delmarks! | q<CR>', { noremap = true })
 
 -- Lua tree
 map('n', '<Leader>m', ':NvimTreeToggle<CR>', { noremap = true })
