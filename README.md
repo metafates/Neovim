@@ -1,8 +1,9 @@
 # 📝 Neovim config
 
-My lua-based neovim config
-
 ![screenshot](./screenshots/1.png)
+
+My minmal lua-based neovim config. Looks pretty either!
+Feel free to do whatever you want with it.
 
 ## Plugins
 
@@ -74,9 +75,9 @@ Be sure to use one of the [nerdfonts](https://github.com/ryanoasis/nerd-fonts) t
 ## Files Structure
 
 ```bash
-├── init.lua                    # load modules
+├── init.lua                    # loads modules
 └─ lua
-    ├── colors                  # colors related stuff (theme)
+    ├── colors                  # stuff related to colors (theme)
     │   └── init.lua  
     ├── core                    # core modules
     │   ├── mappings.lua
