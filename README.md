@@ -27,6 +27,7 @@ Feel free to do whatever you want with it.
 - [VimTeX](https://github.com/lervag/vimtex) - LaTeX support
 - [pywal.nvim](https://github.com/AlphaTechnolog/pywal.nvim) - Neovim pywal integration
 - [vim-signature](https://github.com/kshenoy/vim-signature) - Plugin to place, toggle and display marks.
+- [fugitive](https://github.com/tpope/vim-fugitive) - A Git wrapper so awesome, it should be illegal
 
 ## Install
 

@@ -17,6 +17,7 @@ return require('packer').startup(function()
     use 'gelguy/wilder.nvim'
     use 'lervag/vimtex'
     use 'kshenoy/vim-signature'
+    use 'tpope/vim-fugitive'
 
     use {
         'AlphaTechnolog/pywal.nvim',
