@@ -20,6 +20,17 @@ return require('packer').startup(function()
     use 'tpope/vim-fugitive'
 
     use {
+        'karb94/neoscroll.nvim',
+        config = function()
+            require('neoscroll').setup()
+            local t = {}
+            t['<C-u>'] = {'scroll', {'-vim.wo.scroll', 'true', '100'}}
+            t['<C-d>'] = {'scroll', { 'vim.wo.scroll', 'true', '100'}}
+            require('neoscroll.config').set_mappings(t)
+        end
+    }
+
+    use {
         'AlphaTechnolog/pywal.nvim',
         as = 'pywal'
     }
