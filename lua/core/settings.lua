@@ -11,6 +11,7 @@ set.clipboard = 'unnamedplus'
 set.autoindent = true
 set.updatetime = 200
 set.hidden = true
+set.scrolloff = 8
 
 vim.api.nvim_command('set nobackup')
 vim.api.nvim_command('set noshowmode')
