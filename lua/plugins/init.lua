@@ -15,33 +15,13 @@ return require('packer').startup(function()
     use 'akinsho/toggleterm.nvim'
     use 'goolord/alpha-nvim'
     use 'gelguy/wilder.nvim'
-    use 'lervag/vimtex'
     use 'kshenoy/vim-signature'
     use 'tpope/vim-fugitive'
-
-    use {
-        'karb94/neoscroll.nvim',
-        config = function()
-            require('neoscroll').setup()
-            local t = {}
-            t['<C-u>'] = {'scroll', {'-vim.wo.scroll', 'true', '100'}}
-            t['<C-d>'] = {'scroll', { 'vim.wo.scroll', 'true', '100'}}
-            require('neoscroll.config').set_mappings(t)
-        end
-    }
-
-    use {
-        'AlphaTechnolog/pywal.nvim',
-        as = 'pywal'
-    }
+    use 'ellisonleao/gruvbox.nvim'
 
     use {
         'CRAG666/code_runner.nvim',
         requires = 'nvim-lua/plenary.nvim',
-        commit = 'd1a295eb3ca15ab5e5dfe3c81a2f6f0635af1229',
-        config = function()
-            require('code_runner').setup{}
-        end
     }
 
     use {
@@ -81,11 +61,5 @@ return require('packer').startup(function()
          requires = { 'kyazdani42/nvim-web-devicons', opt = true },
      }
 
-    use {
-        "max397574/better-escape.nvim",
-        config = function()
-            require("better_escape").setup()
-        end,
-    }
 end)
 
