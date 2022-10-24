@@ -1,4 +1,6 @@
+
 # Neovim config
+
 
 ## Plugins
 

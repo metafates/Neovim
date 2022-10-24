@@ -4,8 +4,7 @@ return {
         desc = "Package manager",
     },
     {
-        "github/copilot.vim",
-        desc = "AI code completion",
+        "github/copilot.vim", desc = "AI code completion",
     },
     {
         "neovim/nvim-lspconfig",

@@ -1,5 +1,5 @@
 local function header(level, text)
-    return string.rep("#", level) .. " " .. text .. "\n\n"
+    return "\n" .. string.rep("#", level) .. " " .. text .. "\n\n"
 end
 
 local function list(items, show)
@@ -9,6 +9,10 @@ local function list(items, show)
     end
 
     return l
+end
+
+local function link(text, url)
+    return "[" .. text .. "](" .. url .. ")"
 end
 
 local function generateReadme()
@@ -23,7 +27,7 @@ local function generateReadme()
     readme:write(header(2, "Plugins"))
 
     readme:write(list(require("util").listplugins(), function(plugin)
-        return string.format("[%s](%s) - %s", plugin.name, plugin.url, plugin.desc)
+        return string.format("%s - %s", link(plugin.name, plugin.url), plugin.desc)
     end))
 
     readme:close()

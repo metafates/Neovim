@@ -1,20 +1,35 @@
 local fn = vim.fn
+local cmd = vim.cmd
 
--- install packer if not exists
-local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
-if fn.empty(fn.glob(install_path)) > 0 then
-    local packer_repo = "https://github.com/wbthomason/packer.nvim.git"
-    fn.system({ "git", "clone", packer_repo, install_path })
+local ensure_packer = function()
+    local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
+    if fn.empty(fn.glob(install_path)) > 0 then
+        fn.system({ 'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path })
+        cmd [[packadd packer.nvim]]
+        return true
+    end
+    return false
 end
 
--- load plugins
-return require("packer").startup(function(use)
-    for _, plugin in ipairs(require("plugins.list")) do
-        use(plugin)
-    end
+local packer_bootstrap = ensure_packer()
 
-    -- generate readme as update hook
-    require("packer").post_update = function()
-        require("docs.readme").generate()
-    end
-end)
+
+-- load plugins
+return require("packer").startup {
+    function(use)
+        for _, plugin in ipairs(require("plugins.list")) do
+            use(plugin)
+        end
+
+        if packer_bootstrap then
+            require('packer').sync()
+        end
+    end,
+    config = {
+        display = {
+            open_fn = function()
+                return require('packer.util').float({ border = 'single' })
+            end
+        }
+    }
+}
