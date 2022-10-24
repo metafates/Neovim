@@ -3,7 +3,7 @@ local modules = {
     "mappings",
     "autocmd",
     "opts",
-    "plugins",
+    "plugins.load",
     "lsp",
 }
 

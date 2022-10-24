@@ -1,33 +1,46 @@
-local fn = vim.fn
-
--- install packer if not exists
-local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
-if fn.empty(fn.glob(install_path)) > 0 then
-    local packer_repo = "https://github.com/wbthomason/packer.nvim.git"
-    fn.system({ "git", "clone", packer_repo, install_path })
-end
-
-local plugins = {
-    { "wbthomason/packer.nvim" },
-    { "github/copilot.vim" },
-    { "neovim/nvim-lspconfig" },
-    { "lukas-reineke/lsp-format.nvim" },
-    { "nvim-telescope/telescope.nvim" },
-    { "nvim-telescope/telescope-fzf-native.nvim", run = "make" },
+return {
+    {
+        "wbthomason/packer.nvim",
+        desc = "Package manager",
+    },
+    {
+        "github/copilot.vim",
+        desc = "AI code completion",
+    },
+    {
+        "neovim/nvim-lspconfig",
+        desc = "LSP configuration",
+    },
+    {
+        "lukas-reineke/lsp-format.nvim",
+        desc = "LSP formatting",
+    },
+    {
+        "nvim-telescope/telescope.nvim",
+        desc = "Fuzzy finder",
+    },
+    {
+        "nvim-telescope/telescope-fzf-native.nvim",
+        run = "make",
+        desc = "Fuzzy finder with C fzf",
+    },
     {
         "ggandor/leap.nvim",
+        desc = "Jump to words",
         config = function()
             require("leap").add_default_mappings()
-        end
+        end,
     },
     {
         "nguyenvukhang/nvim-toggler",
+        desc = "Toggle words",
         config = function()
             require("nvim-toggler").setup {}
-        end
+        end,
     },
     {
         "nvim-treesitter/nvim-treesitter",
+        desc = "Syntax highlighting",
         run = ":TSUpdate",
         config = function()
             require("nvim-treesitter.configs").setup {
@@ -42,6 +55,7 @@ local plugins = {
     },
     {
         "folke/which-key.nvim",
+        desc = "Keybindings",
         config = function()
             require("which-key").setup()
         end
@@ -49,6 +63,7 @@ local plugins = {
     {
         "nvim-lualine/lualine.nvim",
         requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+        desc = "Status line",
         config = function()
             require("lualine").setup {
                 options = {
@@ -61,6 +76,7 @@ local plugins = {
     },
     {
         "norcalli/nvim-colorizer.lua",
+        desc = "Color highlighting",
         config = function()
             require("colorizer").setup()
         end
@@ -68,12 +84,14 @@ local plugins = {
     {
         "AlphaTechnolog/pywal.nvim",
         as = "pywal",
+        desc = "Pywal colorscheme",
         config = function()
             require("pywal").setup()
         end
     },
     {
         "echasnovski/mini.nvim",
+        desc = "Mini plugins (comment, lsp completion, autopairs)",
         config = function()
             require("mini.comment").setup()
             require("mini.completion").setup()
@@ -83,6 +101,7 @@ local plugins = {
     {
         "CRAG666/code_runner.nvim",
         requires = "nvim-lua/plenary.nvim",
+        desc = "Run code",
         config = function()
             require("code_runner").setup {
                 filetype = {
@@ -94,10 +113,3 @@ local plugins = {
         end
     }
 }
-
--- load plugins
-return require("packer").startup(function(use)
-    for _, plugin in ipairs(plugins) do
-        use(plugin)
-    end
-end)

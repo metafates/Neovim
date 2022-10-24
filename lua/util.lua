@@ -21,7 +21,20 @@ local function tryload(module)
     end
 end
 
+local function listplugins()
+    local plugins = {}
+    for _, plugin in pairs(require("plugins.list")) do
+        table.insert(plugins, {
+            name = plugin[1],
+            url = "https://github.com/" .. plugin[1],
+            desc = plugin.desc
+        })
+    end
+    return plugins
+end
+
 return {
     merge = merge,
     tryload = tryload,
+    listplugins = listplugins
 }
