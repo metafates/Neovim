@@ -4,6 +4,10 @@ return {
         desc = "Package manager",
     },
     {
+        "ellisonleao/gruvbox.nvim",
+        desc = "Theme",
+    },
+    {
         "github/copilot.vim", desc = "AI code completion",
     },
     {
@@ -66,7 +70,6 @@ return {
         config = function()
             require("lualine").setup {
                 options = {
-                    theme = 'pywal-nvim',
                     component_separators = { left = '', right = '' },
                     section_separators = { left = '', right = '' },
                 }
@@ -78,14 +81,6 @@ return {
         desc = "Color highlighting",
         config = function()
             require("colorizer").setup()
-        end
-    },
-    {
-        "AlphaTechnolog/pywal.nvim",
-        as = "pywal",
-        desc = "Pywal colorscheme",
-        config = function()
-            require("pywal").setup()
         end
     },
     {

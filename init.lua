@@ -1,5 +1,6 @@
 local modules = {
     "globals",
+    "theme",
     "mappings",
     "autocmd",
     "opts",
