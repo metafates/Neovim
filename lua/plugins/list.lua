@@ -28,6 +28,10 @@ return {
         desc = "Fuzzy finder with C fzf",
     },
     {
+        "rhaiscript/vim-rhai",
+        desc = "Rhai syntax highlighting",
+    },
+    {
         "ggandor/leap.nvim",
         desc = "Jump to words",
         config = function()

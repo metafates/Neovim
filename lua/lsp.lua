@@ -6,21 +6,14 @@ local servers = {
     { name = "sumneko_lua" },
     { name = "jsonls" },
     { name = "rust_analyzer" },
-    { name = "jdtls" },
     {
         name = "clangd",
         opts = {
             cmd = { "clangd", "--background-index", "--suggest-missing-includes", "--clang-tidy",
                 "--header-insertion=iwyu" },
-            filetypes = { "c", "cpp", "objc", "objcpp" },
             capabilities = {
                 offsetEncoding = "utf-8"
             },
-            root_dir = function(fname)
-                return nvim_lsp.util.root_pattern("compile_commands.json", ".git")(fname) or
-                    nvim_lsp.util.find_git_ancestor(fname) or
-                    nvim_lsp.util.path.dirname(fname)
-            end
         }
     },
 }
