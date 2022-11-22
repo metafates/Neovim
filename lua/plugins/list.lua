@@ -8,7 +8,8 @@ return {
         desc = "Theme",
     },
     {
-        "github/copilot.vim", desc = "AI code completion",
+        "github/copilot.vim",
+        desc = "AI code completion",
     },
     {
         "neovim/nvim-lspconfig",
@@ -28,21 +29,19 @@ return {
         desc = "Fuzzy finder with C fzf",
     },
     {
-        "rhaiscript/vim-rhai",
-        desc = "Rhai syntax highlighting",
+        "goolord/alpha-nvim",
+        desc = "Greeter",
+        requires = { "kyazdani42/nvim-web-devicons" },
+        config = function()
+            local alpha = require("alpha")
+            alpha.setup(require("alpha.themes.startify").config)
+        end
     },
     {
         "ggandor/leap.nvim",
         desc = "Jump to words",
         config = function()
             require("leap").add_default_mappings()
-        end,
-    },
-    {
-        "nguyenvukhang/nvim-toggler",
-        desc = "Toggle words",
-        config = function()
-            require("nvim-toggler").setup {}
         end,
     },
     {

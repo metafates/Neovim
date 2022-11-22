@@ -11,9 +11,8 @@
 - [lukas-reineke/lsp-format.nvim](https://github.com/lukas-reineke/lsp-format.nvim) - LSP formatting
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy finder
 - [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim) - Fuzzy finder with C fzf
-- [rhaiscript/vim-rhai](https://github.com/rhaiscript/vim-rhai) - Rhai syntax highlighting
+- [goolord/alpha-nvim](https://github.com/goolord/alpha-nvim) - Greeter
 - [ggandor/leap.nvim](https://github.com/ggandor/leap.nvim) - Jump to words
-- [nguyenvukhang/nvim-toggler](https://github.com/nguyenvukhang/nvim-toggler) - Toggle words
 - [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Syntax highlighting
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim) - Keybindings
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) - Status line
