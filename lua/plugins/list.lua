@@ -105,6 +105,13 @@ return {
                     python = "python3 -u",
                     c = "gcc -o $fileNameWithoutExt $fileName && ./$fileNameWithoutExt && rm $fileNameWithoutExt",
                     go = "go run",
+                    rust = "rustc $fileName && ./$fileNameWithoutExt && rm $fileNameWithoutExt",
+                    cpp = "g++ -o $fileNameWithoutExt $fileName && ./$fileNameWithoutExt && rm $fileNameWithoutExt",
+                    lua = "luajit",
+                    sh = "bash",
+                    fish = "fish",
+                    javascript = "bun",
+                    typescript = "bun",
                 }
             }
         end
